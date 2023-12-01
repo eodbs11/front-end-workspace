@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지및멀티미디어태그</title>
+  </head>
+  <body>
+    <h2>이미지 관련 태그</h2>
+
+    <h3></h3>
+    <img src="../resourses/city.jpg" alt="이 사진은 도시 사진입니다." />
+
+    <h3>width와 height 속성</h3>
+
+    <h4>
+      고정길이단위(px) == 기본값 : 화면 사이즈가 조정이 되도 이미지의 크기는
+      변동 없음
+    </h4>
+
+    <img src="../resourses/blueberries.jpg" alt="" width="200" height="120" />
+    <img src="../resourses/cake.jpg" alt="" width="200px" height="120" />
+    <img src="../resourses/icecream.jpg" alt="" width="200" height="120" />
+    <img src="../resourses/macarons.jpg" alt="" width="200" height="120" />
+    <img src="../resourses/pizza.jpg" alt="" width="200" height="120" />
+
+    <h4>
+      가변길이단위(%) : 화면사이즈 또는 부모요소사이즈에 따라 이미지의 크기도
+      같이 변동
+    </h4>
+
+    <img src="../resourses/blueberries.jpg" alt="" width="15%" height="120" />
+    <img src="../resourses/cake.jpg" alt="" width="15%" height="120" />
+    <img src="../resourses/icecream.jpg" alt="" width="15%" height="120" />
+    <img src="../resourses/macarons.jpg" alt="" width="15%" height="120" />
+    <img src="../resourses/pizza.jpg" alt="" width="15%" height="120" />
+
+    <h2>미디어 관련 태그</h2>
+
+    <h3>오디오 관련 태그</h3>
+
+    <!--
+        controls : 재생도구 출력 여부
+        autoplay : 자동 재생여부 지정
+        loop : 반복 재생여부 지정
+    -->
+
+    <audio src="../resourses/audio.mp3" controls autoplay loop></audio>
+
+    <h3>비디오 관련 태그</h3>
+    <video src="../resourses/video.mp4" controls></video>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/watch?v=zuarlc_Lo5w"
+      title="Youtube Video Player"
+    ></iframe>
+  </body>
+</html>
