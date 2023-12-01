@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블 태그</title>
+  </head>
+  <body>
+    <!-- 테이블
+    - 웹 문서에서 자료를 정리할 때 사용
+    -  행과 열로 이루어져있고, 행과 열이 만나는 지점을 셀이라고 한다.
+-->
+    <h1>기본적인 표 만들기</h1>
+    <table border="1">
+      <tr>
+        <td>브라우저명</td>
+        <td>제조사</td>
+        <td>홈페이지</td>
+      </tr>
+      <tr>
+        <td>Chrome</td>
+        <td>google</td>
+        <td>http://google.com</td>
+      </tr>
+      <tr>
+        <td>Safari</td>
+        <td>Apple</td>
+        <td>http://apple.com</td>
+      </tr>
+    </table>
+
+    <h2>표의 행과 열을 합치는 속성</h2>
+    <table border="1">
+      <tr>
+        <td rowspan="2" width="80" height="80">사진</td>
+        <td width="70">이름</td>
+        <td>푸바오</td>
+      </tr>
+      <tr>
+        <td>연락처</td>
+        <td>010-1234-5678</td>
+      </tr>
+      <tr>
+        <td colspan="2" height="30">주소</td>
+        <td>경기도 용인 에버랜드 판다월드</td>
+      </tr>
+      <tr>
+        <td colspan="2" height="60">자기소개</td>
+        <td>나는 개발자를 꿈꾸는 판다! 할 수 있지~~</td>
+      </tr>
+    </table>
+
+    <h2>테이블내에 구조 나누기</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+          <th>주소</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>코식이</td>
+          <td>32</td>
+          <td>경기도 용인</td>
+        </tr>
+        <tr>
+          <td>제돌이</td>
+          <td>10</td>
+          <td>제주도</td>
+        </tr>
+        <tr>
+          <td>세로</td>
+          <td>3</td>
+          <td>서울 광진구</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th colspan="2">총 마리 수</th>
+        <td>3</td>
+      </tfoot>
+    </table>
+  </body>
+</html>
