@@ -1,0 +1,127 @@
+/* 1. 전체 선택자 */
+* {
+  color: blue;
+}
+
+/* 2. 태그 선택자 */
+h3 {
+  background-color: yellow;
+}
+p {
+  color: tomato;
+}
+
+/* 3. 클래스 선택자 */
+.class1 {
+  color: yellowgreen;
+}
+.class2 {
+  font-size: 30px;
+}
+
+/* 4. 아이디 선택자 */
+#id1 {
+  color: orange;
+}
+
+/* 5. 그룹선택지 */
+#select1,
+#select2 {
+  background: orangered;
+}
+
+/* 6.자식 선택자와 자손 선택자 */
+#test1 > * {
+  background: pink;
+}
+#test li {
+  color: red;
+}
+#test1 > ul > li {
+  background: darkcyan;
+}
+
+/* 7. 속성 선택자 */
+/* div 요소들중 name 속성값이 name1과 "일치"하는 요소 */
+div[name="name1"] {
+  background: orange;
+}
+
+/* div 요소들중 name 속성값이 name1이 "포함"되어있는 요소 */
+div[name~="name1"] {
+  background: yellow;
+}
+
+/* div 요소들중 class 속성값이 -c가 "포함"되어있는 요소 */
+div[class*="-c"] {
+  color: red;
+}
+
+div[name^="na"] {
+  background: blue;
+}
+/* div요소들중  */
+
+div[class|="class"] {
+  background: cyan;
+}
+/* div 요소들 중에서 class 속성값이 ss로 "끝"나는 요소 */
+div[class$="ss"] {
+  color: white;
+}
+
+/* 8.형제 선택자 */
+
+/* a + b : a 요소 뒤에 있는 b 요소 "하나만" 선택  */
+#test2 + div {
+  background: yellow;
+}
+
+#test2 + p {
+  background: pink; /*제대로 선택 x (바로 뒤에 있는 요소가 아니기 때문)*/
+}
+/* a ~ b : a요소 뒤에 "모든" b 요소 선택 */
+#test2 ~ div {
+  background: beige;
+}
+
+#test2 ~ p {
+  background: deeppink;
+}
+
+/* 9. 반응 선택자 */
+.area {
+  background: yellowgreen;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+/* :active : 사용자가 클릭하는 요소*/
+#active-test:active {
+  background: yellow;
+  color: red;
+}
+
+/* :hover : 사용자가 마우스를 올려놓은 요소 */
+#hover-test:hover {
+  background: maroon;
+  color: white;
+}
+input[name^="user"]:focus {
+  background: pink;
+}
+/* 10. 상태 선택자 */
+input[type="checkbox"]:checked {
+  width: 20px;
+  height: 20px;
+}
+input[type="checkbox"]:checked + label {
+  font-size: 20px;
+}
+button:disabled {
+  background: yellowgreen;
+}
+button:enabled {
+  background: violet;
+}
