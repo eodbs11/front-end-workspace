@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시맨틱 태그</title>
+  </head>
+  <body>
+    <h2>레이아웃 1 : div</h2>
+    <div id="header">
+        <h1>LOGO</h1>
+        <div>GNB</div>
+    </div>
+    <!-- div#main or #main -->
+    <div id="main">
+        Main Image
+        <div class="main_image">Mainimage</div>
+        <!-- .cont_wrap -->
+        <div class="cont_wrap">
+            <div class="content">
+                <p>content</p>
+                <span>Content Image 1</span>
+            </div>
+            <div class="content">
+                <p>content</p>
+                <span>Content Image 2</span>
+        </div>
+    </div>  
+    <div id="section">
+        <div class="section_content">Section</div>
+        <div class="aside">Ads</div> 
+    </div> 
+    <div id ="footer">Footer</div> 
+
+    <h2>레이아웃 2 : Semantic Tag</h2>
+    <header>
+        <h1>LOGO</h1>
+        <div>GNB</div>
+    </header>
+    <!-- div#main or #main -->
+    <main>
+        <div class="main_image">Mainimage</div>
+        <!-- .cont_wrap -->
+        <main class="cont_wrap">
+            <div class="content">
+                <p>content</p>
+                <span>Content Image 1</span>
+            </div>
+            <div class="content">
+                <p>content</p>
+                <span>Content Image 2</span>
+        </div>
+    </main>  
+
+    <!--section or article-->
+    <section>
+        <article>Section</article>
+        <aside>Ads</aside> 
+    </section> 
+    <footer>Footer</footer> 
+  </body>
+</html>

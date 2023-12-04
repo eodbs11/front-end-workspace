@@ -77,6 +77,141 @@
 
       <br />
       <input type="submit" value="전송" />
+      <input type="reset" value="초기화" />
     </form>
+
+    <h3>type="hidden|file"</h3>
+    <form action="">
+      <input type="hidden" name="hiddenValue" value="1234" />
+      <label for="uploadFile"></label>
+      <input
+        type="file"
+        id="uploadFile"
+        name="upload"
+        multiple
+        accept="image/*, .pdf"
+      />
+      <input type="submit" value="전송" />
+    </form>
+
+    <h3>type-"datetime-local|week|month|date|time"</h3>
+
+    <form action="">
+      <label for="datetime-local"> datetime : </label>
+      <input type="datetime-local" id="datetime-local" />
+
+      <br /><br />
+
+      <form action="">
+        <label for="week">주 : </label>
+        <input type="week" id="week" />
+
+        <br><br>
+        
+        <label for="month">월: </label>
+        <input type="month" id="month" />
+
+        <br><br>
+        
+        <label for="date">날짜 : </label>
+        <input type="date" id="date" />
+
+        <br><br>
+        
+        <label for="time">시간: </label>
+        <input type="time" id="time" />
+
+        <br><br>        
+
+        <input type="submit" value="전송" />
+      </form>
+    </form>
+
+      <h3>type= "email|url|search|tel"</h3>
+      <form action="">
+        <label for="email">이메일 : </label>
+        <input type="email" id="email" />
+
+        <br><br>
+        
+        <label for="url">사이트 주소 : </label>
+        <input type="url" id="url" />
+
+        <br><br>
+        
+        <label for="search">검색 : </label>
+        <input type="search" id="search" />
+
+        <br><br>
+        
+        <label for="tel">전화번호</label> : </label>
+        <input type="tel" id="tel" />
+
+        <br><br>
+
+        <input type="submit" value="전송" />
+
+      </form>
+
+      <h3>type= "number|range|color"</h3>
+
+      <form action="">
+        <label for="amount">수량 : </label>
+        <input type="number" id="amount" min="0" max="10" step="2"/>
+
+        <br><br>
+        
+        <label for="point">포인트 : </label>
+        <input type="range" id="point" min="0" max="1000" step="100"/>
+
+        <br><br>
+        
+        <label for="color">검색 : </label>
+        <input type="color" id="color" />
+
+        <br><br>
+
+        <input type="button" value="버튼" onclick="alert('버튼 클릭!')"/>
+
+      </form>          
+
+      <h2>select 태그</h2>
+      <form action="">
+        <label for="national">국적 : </label>
+        
+        <select name="national" id="national">'
+          <optgroup label="아시아">
+          <option value="kr">한국</option>
+          <option value="jp">일본</option>
+          <option value="ch">중국</option>
+          </optgroup>
+          <optgroup label="기타">
+          <option value="us">미국</option>
+          <option value="fr">프랑스</option>
+          </optgroup>
+          <option selected>------------</option>
+        </select>
+        
+      </form>
+
+      <h2>textarea 태그</h2>
+      <form action="">
+        <textarea 
+        name="" 
+        id="" 
+        cols="30" 
+        rows="10" 
+        style="resize: none"
+        ></textarea>
+
+        <!-- input type"submit"과 같은 역할 -->
+        <button type="submit">전송</button>
+
+        <!-- input type"reset"과 같은 역할 -->
+        <button type="reset">초기화</button>
+
+        <!-- input type"button"과 같은 역할 -->
+        <button type="button" onclick="alert('버튼 클릭!')">버튼</button>
+      </form>
   </body>
 </html>
