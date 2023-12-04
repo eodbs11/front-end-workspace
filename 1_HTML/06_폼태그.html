@@ -106,112 +106,110 @@
         <label for="week">주 : </label>
         <input type="week" id="week" />
 
-        <br><br>
-        
+        <br /><br />
+
         <label for="month">월: </label>
         <input type="month" id="month" />
 
-        <br><br>
-        
+        <br /><br />
+
         <label for="date">날짜 : </label>
         <input type="date" id="date" />
 
-        <br><br>
-        
+        <br /><br />
+
         <label for="time">시간: </label>
         <input type="time" id="time" />
 
-        <br><br>        
+        <br /><br />
 
         <input type="submit" value="전송" />
       </form>
     </form>
 
-      <h3>type= "email|url|search|tel"</h3>
-      <form action="">
-        <label for="email">이메일 : </label>
-        <input type="email" id="email" />
+    <h3>type= "email|url|search|tel"</h3>
+    <form action="">
+      <label for="email">이메일 : </label>
+      <input type="email" id="email" />
 
-        <br><br>
-        
-        <label for="url">사이트 주소 : </label>
-        <input type="url" id="url" />
+      <br /><br />
 
-        <br><br>
-        
-        <label for="search">검색 : </label>
-        <input type="search" id="search" />
+      <label for="url">사이트 주소 : </label>
+      <input type="url" id="url" />
 
-        <br><br>
-        
-        <label for="tel">전화번호</label> : </label>
-        <input type="tel" id="tel" />
+      <br /><br />
 
-        <br><br>
+      <label for="search">검색 : </label>
+      <input type="search" id="search" />
 
-        <input type="submit" value="전송" />
+      <br /><br />
 
-      </form>
+      <label for="tel">전화번호: </label>
+      <input type="tel" id="tel" />
 
-      <h3>type= "number|range|color"</h3>
+      <br /><br />
 
-      <form action="">
-        <label for="amount">수량 : </label>
-        <input type="number" id="amount" min="0" max="10" step="2"/>
+      <input type="submit" value="전송" />
+    </form>
 
-        <br><br>
-        
-        <label for="point">포인트 : </label>
-        <input type="range" id="point" min="0" max="1000" step="100"/>
+    <h3>type= "number|range|color"</h3>
 
-        <br><br>
-        
-        <label for="color">검색 : </label>
-        <input type="color" id="color" />
+    <form action="">
+      <label for="amount">수량 : </label>
+      <input type="number" id="amount" min="0" max="10" step="2" />
 
-        <br><br>
+      <br /><br />
 
-        <input type="button" value="버튼" onclick="alert('버튼 클릭!')"/>
+      <label for="point">포인트 : </label>
+      <input type="range" id="point" min="0" max="1000" step="100" />
 
-      </form>          
+      <br /><br />
 
-      <h2>select 태그</h2>
-      <form action="">
-        <label for="national">국적 : </label>
-        
-        <select name="national" id="national">'
-          <optgroup label="아시아">
+      <label for="color">검색 : </label>
+      <input type="color" id="color" />
+
+      <br /><br />
+
+      <input type="button" value="버튼" onclick="alert('버튼 클릭!')" />
+    </form>
+
+    <h2>select 태그</h2>
+    <form action="">
+      <label for="national">국적 : </label>
+
+      <select name="national" id="national">
+        '
+        <optgroup label="아시아">
           <option value="kr">한국</option>
           <option value="jp">일본</option>
           <option value="ch">중국</option>
-          </optgroup>
-          <optgroup label="기타">
+        </optgroup>
+        <optgroup label="기타">
           <option value="us">미국</option>
           <option value="fr">프랑스</option>
-          </optgroup>
-          <option selected>------------</option>
-        </select>
-        
-      </form>
+        </optgroup>
+        <option selected>------------</option>
+      </select>
+    </form>
 
-      <h2>textarea 태그</h2>
-      <form action="">
-        <textarea 
-        name="" 
-        id="" 
-        cols="30" 
-        rows="10" 
+    <h2>textarea 태그</h2>
+    <form action="">
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
         style="resize: none"
-        ></textarea>
+      ></textarea>
 
-        <!-- input type"submit"과 같은 역할 -->
-        <button type="submit">전송</button>
+      <!-- input type"submit"과 같은 역할 -->
+      <button type="submit">전송</button>
 
-        <!-- input type"reset"과 같은 역할 -->
-        <button type="reset">초기화</button>
+      <!-- input type"reset"과 같은 역할 -->
+      <button type="reset">초기화</button>
 
-        <!-- input type"button"과 같은 역할 -->
-        <button type="button" onclick="alert('버튼 클릭!')">버튼</button>
-      </form>
+      <!-- input type"button"과 같은 역할 -->
+      <button type="button" onclick="alert('버튼 클릭!')">버튼</button>
+    </form>
   </body>
 </html>
