@@ -1,0 +1,50 @@
+/* background-color */
+#bc {
+  background-color: lightblue;
+}
+/* background-color */
+.div-test {
+  background-color: yellow;
+  border: 10px dashed black;
+  padding: 20px;
+  margin: 20px;
+}
+/* border-box : 테두리 까지 적용(기본값) */
+#bc1 {
+  background-clip: border-box;
+}
+/* padding-box : 테두리를 뺀 패딩 범위까지 적용 */
+#bc2 {
+  background-clip: padding-box;
+}
+/* content-box: 내용 부분에만 적용 */
+#bc3 {
+  background-clip: content-box;
+}
+/* background */
+/* background-image : 배경에 이미지를 설정하는 속성 
+    background-repeat : 
+    background-size : 배경이미지 크기를 조절하는 속성
+                        contain(요소 안에 이미지가 들어가도록 확대/축소)
+                        cover/
+#test {
+  border: 1px solid black;
+  height: 800px;
+
+  background-image: url("../resourses/macarons.jpg");
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+
+  background-size: auto;
+  background-size: 400px 200px;
+  background-size: 50% 50%;
+  background-size: contain;
+  background-size: cover;
+
+  background-position: 50px 25px;
+  background-position: left bottom;
+  background-position: 50%;
+  background-position: center;
+}

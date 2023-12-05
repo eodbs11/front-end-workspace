@@ -1,0 +1,163 @@
+/*font-family*/
+#ff1 {
+  font-family: 궁서체;
+}
+#ff2 {
+  font-family: 고딕체;
+}
+#ff3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* 구글 웹 폰트 : fonts.google.com */
+#ff4 {
+  font-family: "Gugi", sans-serif;
+  font-family: "Rubik Bubbles";
+}
+/* font-size */
+/* 기본크기 : 16px */
+#fs1 {
+  font-size: 19px;
+}
+#fs2 {
+  font-size: 2em;
+}
+#fs3 {
+  font-size: 2rem;
+}
+#fs4 {
+  font-size: 150%;
+}
+
+/* font-weight */
+#fw1 {
+  font-weight: bold;
+}
+#fw2 {
+  font-weight: 900; /*bolder*/
+}
+#fw3 {
+  font-weight: 100; /*lighter*/
+}
+/* font-style */
+#fs6 {
+  font-style: oblique;
+}
+/* font-variant */
+#fv {
+  font-variant: small-caps;
+}
+/* font: font-style font-variant font-weight font size/line-height font-family; */
+#font1 {
+  font: italic small-caps bold 32px/2 "Gugi";
+}
+#font2 {
+  font: 2rem "Gugi";
+}
+#c-name {
+  color: red;
+}
+#c-16 {
+  color: #dd882e;
+}
+#c-rgb {
+  color: rgb(68, 223, 78);
+  color: rgba(68, 223, 78, 0.5);
+}
+#c-hsl {
+  color: hsl(200, 50%, 50%);
+  color: hsla(200, 50%, 50%, 0.2);
+}
+/* text-decoration */
+#td1 {
+  text-decoration: underline;
+}
+#td2 {
+  text-decoration: overline;
+}
+#td3 {
+  text-decoration: line-through;
+}
+#td4 {
+  text-decoration: none;
+}
+#td4:visited {
+  color: green;
+}
+
+/* text-transform */
+#tt1 {
+  text-transform: uppercase;
+}
+#tt2 {
+  text-transform: lowercase;
+}
+#tt3 {
+  text-transform: capitalize;
+}
+/* text-shadow */
+.shadow {
+  font-size: 50px;
+  font-weight: 900;
+}
+/* 
+    text-shadow: dx dy blur color
+    -dx : 그림자의 가로방향 거리 지정 (양수 : 오른쪽, 음수 : 왼쪽)
+    -dy : 그림자의 세로방향 거리 지정 (양수 : 아래쪽, 음수 : 위쪽)
+    -blur : 그림자의 흐려짐 정도 (양수 : 모든 방향으로 번짐,
+                                 음수: 모든 방향으로 축소)
+    -color : 그림자의 색상 지정 (기본값 : 현재 글자색)
+*/
+#ts1 {
+  color: orangered;
+  text-shadow: 5px 5px 5px yellow;
+}
+#ts2 {
+  color: white;
+  text-shadow: 0px 0px 10px yellowgreen;
+}
+#ts3 {
+  text-shadow: 0px 0px 4px gray, 0px -5px 4px yellow, 0px -10px 8px orange,
+    0px -15px 15px orangered, 0;
+}
+/* white-space */
+#whs {
+  border: 1px solid;
+  width: 200px;
+  /* normal :  여러개의 공백을 하나로 표시 기본값)*/
+  white-space: normal;
+  /* nowrap : 여러 개의 공백을 하나로 표시, 영역을 넘어가는 내용은 줄바꾸지 않고 한줄로 표시*/
+  white-space: nowrap;
+  /*pre : 여러개의 공백을 그대로 표시, 영역을 넘어가는 내용은 줄바꾸지 않고 한줄로 표시  */
+  white-space: pre;
+  /* pre-wrap 여러 개의 공백을 하나로 표시 */
+  white-space: pre-line;
+  /* pre-wrap 여러 개의 공백을 그대로 표시 */
+  white-space: pre-wrap;
+  /* letter-spacing */
+  #ls {
+    letter-spacing: 10px;
+    letter-spacing: 1.8rem;
+  }
+}
+
+/* text-align */
+#ta1 {
+  text-align: left;
+}
+#ta2 {
+  text-align: right;
+}
+/* text */
+#to {
+    background-color: beige;
+    width: 500px;
+    white-space: nowrap
+    overflow: hidden;
+
+}
+#list1{
+    list-style: disc;
+    list-style: circle;
+    list-style: square;
+    list-style: none;
+}

@@ -125,3 +125,40 @@ button:disabled {
 button:enabled {
   background: violet;
 }
+
+/* 11. 구조 선택자. */
+/*첫번째 요소*/
+#test3 li:first-child {
+  background: salmon;
+}
+/*해당 유형중첫번째 요소*/
+#test3 p:first-of-type {
+  background: red;
+}
+/*마지막 요소*/
+#test3 li:last-of-type {
+  background: brown;
+}
+/*even : 짝수, odd : 홀수*/
+#test3 li:nth-child(odd) {
+  background: darkcyan;
+}
+/*해당 유형 중 몇번째 요소*/
+#test3 li:nth-of-type(2) {
+  color: white;
+}
+/*뒤에서부터 몇 번째 요소*/
+#test3 li:nth-last-child(4) {
+  background: hotpink;
+}
+/*12. 가상 요소 선택지*/
+#test4 p::before {
+  content: "앞";
+  color: blue;
+  background: yellow;
+}
+#test4 P::after {
+  content: "뒤";
+  color: white;
+  background: black;
+}

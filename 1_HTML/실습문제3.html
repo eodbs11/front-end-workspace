@@ -11,7 +11,7 @@
 
     <form action="">
       <label for="name">고객명 : </label>
-      <input type="name" id="name" />
+      <input type="text" id="name" />
 
       <br /><br />
 
@@ -27,24 +27,35 @@
 
       <fieldset>
         <legend>피자 사이즈</legend>
-        <input type="radio" name="size" value="S" /> Small <br /><br />
-        <input type="radio" name="size" value="M" /> Medium <br /><br />
-        <input type="radio" name="size" value="L" /> Large
+        <input type="radio" id="small" name="size" value="small" />
+        <label for="small">Small</label>
+        <br /><br />
+        <input type="radio" id="medium" name="size" value="medium" />
+        <label for="medium">Medium</label>
+        <br /><br />
+        <input type="radio" id="large" name="size" value="large" />
+        <label for="large">Large</label>
       </fieldset>
 
       <fieldset>
         <legend>토핑 선택</legend>
+        <input type="checkbox" name="topping" id="baccon" value="baccon" />
+        <label for="baccon">베이컨</label>
+        <br /><br />
+        <input type="checkbox" name="topping" id="cheese" value="cheese" />
+        <label for="cheese">치즈</label>
+        <br /><br />
+        <input type="checkbox" name="topping" id="onion" value="onion" />
+        <label for="onion">양파</label>
+        <br /><br />
         <label
-          ><input type="checkbox" name="topping" value="baccon" /> 베이컨</label
-        ><br /><br />
-        <label
-          ><input type="checkbox" name="topping" value="cheese" /> 치즈</label
-        ><br /><br />
-        <label
-          ><input type="checkbox" name="topping" value="onion" /> 양파</label
-        ><br /><br />
-        <label
-          ><input type="checkbox" name="topping" value="mushroom" /> 버섯</label
+          ><input
+            type="checkbox"
+            name="topping"
+            id="mushroom"
+            value="mushroom"
+          />
+          버섯</label
         >
       </fieldset>
 
@@ -56,11 +67,11 @@
       <br />
 
       <h2>배송시 요청 사항</h2>
-
+      <label for="memo">배송시 요청 사항</label>
       <textarea
-        name="text"
-        id="text"
-        cols="40"
+        name="memo"
+        id="memo"
+        cols="30"
         rows="10"
         style="resize: none"
         placeholder="내용을 입력하세요"

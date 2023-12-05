@@ -1,0 +1,20 @@
+h1 {
+  background: pink;
+  color: yellow;
+}
+h1 {
+  background: skyblue;
+}
+#id1 {
+  background: pink;
+}
+.class1 {
+  background: yellowgreen;
+  color: red;
+}
+div {
+  background: teal !important;
+  color: white !important;
+  width: 200px;
+  height: 200px;
+}
