@@ -24,17 +24,17 @@ p {
   color: orange;
 }
 
-/* 5. 그룹선택지 */
+/* 5. 그룹 선택자 */
 #select1,
 #select2 {
   background: orangered;
 }
 
-/* 6.자식 선택자와 자손 선택자 */
+/* 6. 자식 선택자와 자손 선택자 */
 #test1 > * {
   background: pink;
 }
-#test li {
+#test1 li {
   color: red;
 }
 #test1 > ul > li {
@@ -42,49 +42,46 @@ p {
 }
 
 /* 7. 속성 선택자 */
-/* div 요소들중 name 속성값이 name1과 "일치"하는 요소 */
+/* div 요소들 중 name 속성값이 name1과 "일치"하는 요소 */
 div[name="name1"] {
   background: orange;
 }
 
-/* div 요소들중 name 속성값이 name1이 "포함"되어있는 요소 */
+/* div 요소들 중 name 속성값이 name1이 "포함"되어있는 요소 */
 div[name~="name1"] {
   background: yellow;
 }
-
-/* div 요소들중 class 속성값이 -c가 "포함"되어있는 요소 */
+/* div 요소들 중 class 속성값이 -c가 "포함"되어있는 요소 */
 div[class*="-c"] {
   color: red;
 }
 
+/* div 요소들 중에서 name 속성값이 na로 "시작"되는 요소 */
 div[name^="na"] {
   background: blue;
 }
-/* div요소들중  */
-
+/* div 요소들 중 class 속성값이 class로 "시작"되는 요소 */
 div[class|="class"] {
   background: cyan;
 }
+
 /* div 요소들 중에서 class 속성값이 ss로 "끝"나는 요소 */
 div[class$="ss"] {
   color: white;
 }
 
-/* 8.형제 선택자 */
-
-/* a + b : a 요소 뒤에 있는 b 요소 "하나만" 선택  */
+/* 8. 형제 선택자 */
+/* a + b : a 요소 뒤에 있는 b 요소 "하나만" 선택 */
 #test2 + div {
   background: yellow;
 }
-
 #test2 + p {
-  background: pink; /*제대로 선택 x (바로 뒤에 있는 요소가 아니기 때문)*/
+  background: pink; /* 제대로 선택 X (바로 뒤에 있는 요소가 아니기 때문) */
 }
-/* a ~ b : a요소 뒤에 "모든" b 요소 선택 */
+/* a ~ b : a 요소 뒤에 "모든" b 요소 선택 */
 #test2 ~ div {
   background: beige;
 }
-
 #test2 ~ p {
   background: deeppink;
 }
@@ -96,13 +93,11 @@ div[class$="ss"] {
   height: 100px;
   cursor: pointer;
 }
-
-/* :active : 사용자가 클릭하는 요소*/
+/* :active : 사용자가 클릭하는 요소 */
 #active-test:active {
   background: yellow;
   color: red;
 }
-
 /* :hover : 사용자가 마우스를 올려놓은 요소 */
 #hover-test:hover {
   background: maroon;
@@ -111,6 +106,7 @@ div[class$="ss"] {
 input[name^="user"]:focus {
   background: pink;
 }
+
 /* 10. 상태 선택자 */
 input[type="checkbox"]:checked {
   width: 20px;
@@ -126,38 +122,48 @@ button:enabled {
   background: violet;
 }
 
-/* 11. 구조 선택자. */
-/*첫번째 요소*/
+/* 11. 구조 선택자 */
+/* 첫번째 요소 */
 #test3 li:first-child {
   background: salmon;
 }
-/*해당 유형중첫번째 요소*/
+/* 해당 유형 중 첫번째 요소 */
 #test3 p:first-of-type {
-  background: red;
+  color: red;
 }
-/*마지막 요소*/
+/* 마지막 요소 */
+#test3 li:last-child {
+  background: skyblue;
+}
+/* 해당 유형 중 마지막 요소 */
 #test3 li:last-of-type {
-  background: brown;
+  color: brown;
 }
-/*even : 짝수, odd : 홀수*/
+/* 몇 번째 요소 */
+/* even : 짝수, odd : 홀수 */
 #test3 li:nth-child(odd) {
   background: darkcyan;
 }
-/*해당 유형 중 몇번째 요소*/
+/* 해당 유형 중 몇번째 요소 */
 #test3 li:nth-of-type(2) {
   color: white;
 }
-/*뒤에서부터 몇 번째 요소*/
+/* 뒤에서부터 몇번째 요소 */
 #test3 li:nth-last-child(4) {
   background: hotpink;
 }
-/*12. 가상 요소 선택지*/
+/* 뒤에서부터 해당 유형 중 몇번째 요소 */
+#test3 li:nth-last-of-type(3) {
+  background: seagreen;
+}
+
+/* 12. 가상 요소 선택자 */
 #test4 p::before {
   content: "앞";
   color: blue;
   background: yellow;
 }
-#test4 P::after {
+#test4 p::after {
   content: "뒤";
   color: white;
   background: black;
