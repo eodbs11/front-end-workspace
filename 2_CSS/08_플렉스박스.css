@@ -2,76 +2,71 @@
   height: 100vh;
   background: lightgray;
 
+  /* 1. display: flex; */
   display: flex;
 
+  /* 2. flex-direction */
   flex-direction: column;
   flex-direction: column-reverse;
   flex-direction: row-reverse;
   flex-direction: row; /* 기본값 */
+
+  /* 3. flex-wrap */
+  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
+  flex-wrap: nowrap; /* 기본값 */
+
+  /* 4. justify-content */
+  justify-content: flex-end;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  justify-content: center;
+  justify-content: flex-start; /*기본값*/
+
+  /* 5. align-items */
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch; /* 기본값 */
+
+  /* 6. align-content */
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
 }
-
-justify-content: flex-end;
-justify-content: space-between;
-justify-content: space-around;
-justify-content: space-evenly;
-justify-content: center;
-justify-content: flex-start;
-
-align-item: flex-start;
-
 .item {
   background-color: white;
   border: 3px solid black;
   padding: 1rem;
-}
 
-.item img {
-  width: 95px;
-  height: 95px;
+  /* flex */
+  flex-basis: auto; /* 기본값 */
+  flex: 1;
 }
-
-.item:nth-last-child(1) {
-  flex-grow: 1;
+.item:nth-child(1) {
+  /* flex-grow: 1; */
   align-self: flex-start;
   order: 2;
 }
-
-.item:nth-last-child(2) {
-  flex-grow: 5;
+.item:nth-child(2) {
+  /* flex-grow: 5; */
   align-self: center;
   order: 3;
 }
-
-.item:nth-last-child(3) {
-  flex-grow: 2;
+.item:nth-child(3) {
+  /* flex-grow: 2; */
   align-self: flex-end;
   order: 1;
 }
-
-.item:nth-last-child(4) {
-  flex-grow: 3;
+.item:nth-child(4) {
+  /* flex-grow: 3; */
 }
-
-.item:nth-last-child(5) {
-  flex-grow: 1;
+.item:nth-child(5) {
+  /* flex-grow: 1; */
 }
-
-##
-  align-self
-  -특정
-  아이템만
-  정렬을
-  따로
-  정렬하고자
-  할
-  때
-  사용하는
-  속성
-  `css
-  .item {
-  align-self: flex-start or flex-end or center;
-}
-
-## order -item들의 순서를 바꿀 수 있는 속성 ```css .item {
-  order: 0 or 숫자;
+.item img {
+  width: 95px;
+  height: 95px;
 }
