@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightsalmon;
+  background:  linear-gradient(purple);
+  height: 100vh;
+  padding: 40px;
+}
+#pubao {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+#font1 {
+  color: lightslategrey;
+  font-size: 1.5rnam;
+}
+.main {
+  background-color: white;
+  width: 350px;
+  border-radius: 10px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.profile-card a {
+  display: block;
+  background-color: lightsalmon;
+  border: 2px; 
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  margin: 15px;
+  font-weight: bold;
+}
+.profile-card img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-card h1{back
+}
+
+.profile-card h2{back
+}
+
+.profile-card a:hover {
+  /* background-color: black; */
+  background-color: white;
+  color: black;
+}

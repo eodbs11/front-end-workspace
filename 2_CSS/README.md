@@ -126,3 +126,142 @@ rgba(red(0~255), green(0~255), blue(0~255), alpha(0~1));
 - fixed : 지정한 위치에 고정하여 요소를 배치
 - 속성값이 static을 제외한 나머지들은 좌표를 이용해서 요소의 위치를 조절할 수 있다.
 - 위치는 top, bottom, left, right로 지정할 수 있다.
+
+# 반응형 웹
+
+- 구간 별 페이지 제작 : pc, tablet, mobile
+- viewport(스마트폰 화면에서 실제 내용이 표시되는 영역)
+
+```html
+<meta name="viewport" />
+```
+
+width : 뷰포트 너비(device-width or 크기
+height :뷰포트 높이
+user sl
+
+##미디어쿼리(media auf)
+
+#Flex
+
+-CSS 레이아웃 모델로 화면 크기에 따라 레이아웃의 배치나 크기를 조절 할때 편리하게 사용
+
+```html
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+```
+
+## display : flex;
+
+- Flex 컨테이너에 display:flex;를 적용하면서 시작
+
+````css
+.container{
+  display: flex;
+}```
+````
+
+## flex-direction
+
+- 배치 방향 설정
+- 아이템들이 배치되는 메인축의 방향을 결정하는 속성
+
+```css
+.container {
+  flex-direction: row or column or row-reverse or column-recerse;
+}
+```
+
+-row : 왼쪽부터 순차적 배치(기본값)
+-row-reverse : 오른쪽부터 순차적 배치
+-column : 위에서 아래로 순차적 배치
+
+-nowrap : 줄바꿈을 하지 않음
+-wrap: 줄 바꿈
+-wrap-reverse : 역순으로 배치후 줄바꿈
+
+## flex-flow
+
+-flex-direction과 flex-wrap을 한꺼번에 지정할 수 있는 단축속성
+
+````css
+.container{
+  flex-flow: flex
+}```
+````
+
+## justify-content
+
+-메인축 방향으로 정렬
+
+``css
+.container{
+justify-content: flex-start or flex-end or center
+or space-between or
+space-around or space-evenly;
+}
+
+`````
+
+-flex-start : 아이템을 시작점으로 정렬 (기본값)
+-flex-end : 아이템들을 끝점으로 정렬
+-center : 아이템들을 가운데로 정렬
+-space-between : 아이템들 사이에 균일한 간격으로 정렬
+-space-around: 각 아이템의 좌우에 균일한 간격으로 정렬
+-space-evenly :
+
+```css
+.container{
+
+}```
+
+
+-stretch : 아이템들을 위아래 방향으로 끝까지 늘림 (기본값)
+-flex-start : 아이템들을 위쪽으로 정렬
+
+## align-content
+
+-여러 행 정렬
+-flex-wrap: wrap; 이 설정된 상태에서, 아이템들의 행이 2줄이상인 경우
+
+## flex-basis
+- flex 아이템의 기본 크기 설정(flex-direction이 row일 때는 너비, column일 떄는 높이)
+````css
+.item {
+  flex-basis: auto or
+}
+
+## flex-grow
+
+-flex-basis의 값보다 커질 수 있는지를 결정하는 속성
+
+## flex-shrink
+
+- flex-grow와 쌍을 이루는 속성으로, flex-basis 값보다 작아질수 있는지를 결정하는 속성
+
+```css
+.item {
+  flex-shi
+}
+```
+##flex
+-flex-grow, flex-shrink, flex-basis를 한 번에 쓸 수 있는 속성
+
+```css
+.item {
+  flex: 1 1 auto;
+  /* flex-grow:1; flex-shrink:1; flex-basis:auto; */
+
+  flex: 1 500px;
+  /* flex-grow:1; flex-shrink:1; flex-basis:500px; */
+
+  flex: 1;
+  /* flex-grow:1; flex-shrink:1; flex-basis:0%; */
+
+
+}
+`````

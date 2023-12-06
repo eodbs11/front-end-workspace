@@ -131,3 +131,42 @@
   height: 100px;
   background-color: blue;
 }
+/* visibility */
+.visibility {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+}
+#vis1 {
+  visibility: hidden;
+  display: none;
+  background-color: beige;
+}
+#vis2 {
+  background-color: skyblue;
+}
+
+/* z-index */
+
+#z-outer {
+  width: 150px;
+  hyphenate-character: ;
+}
+#z-index1 {
+  background-color: orange;
+  top: 50px;
+  left: 50px;
+  border: 1px solid;
+  z-index: 1;
+}
+#z-index2 {
+  background-color: blueviolet;
+  top: 50px;
+  left: 50px;
+  z-index: 9999;
+}
+
+#z-index3 {
+  background-color: green;
+  z-index: -1;
+}

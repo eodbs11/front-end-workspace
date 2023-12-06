@@ -1,0 +1,77 @@
+.container {
+  height: 100vh;
+  background: lightgray;
+
+  display: flex;
+
+  flex-direction: column;
+  flex-direction: column-reverse;
+  flex-direction: row-reverse;
+  flex-direction: row; /* 기본값 */
+}
+
+justify-content: flex-end;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+justify-content: center;
+justify-content: flex-start;
+
+align-item: flex-start;
+
+.item {
+  background-color: white;
+  border: 3px solid black;
+  padding: 1rem;
+}
+
+.item img {
+  width: 95px;
+  height: 95px;
+}
+
+.item:nth-last-child(1) {
+  flex-grow: 1;
+  align-self: flex-start;
+  order: 2;
+}
+
+.item:nth-last-child(2) {
+  flex-grow: 5;
+  align-self: center;
+  order: 3;
+}
+
+.item:nth-last-child(3) {
+  flex-grow: 2;
+  align-self: flex-end;
+  order: 1;
+}
+
+.item:nth-last-child(4) {
+  flex-grow: 3;
+}
+
+.item:nth-last-child(5) {
+  flex-grow: 1;
+}
+
+##
+  align-self
+  -특정
+  아이템만
+  정렬을
+  따로
+  정렬하고자
+  할
+  때
+  사용하는
+  속성
+  `css
+  .item {
+  align-self: flex-start or flex-end or center;
+}
+
+## order -item들의 순서를 바꿀 수 있는 속성 ```css .item {
+  order: 0 or 숫자;
+}

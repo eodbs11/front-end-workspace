@@ -1,0 +1,52 @@
+.container {
+  background-color: cornflowerblue;
+}
+body {
+  margin: 0;
+}
+#con-2::after {
+  content: "Clear!";
+  clear: both;
+  visibility: hidden;
+}
+{con3}
+.item-inline-block {
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: top;
+}
+.item-style-1 {
+  background-color: paleturquoise;
+  width: 40%;
+}
+#con-1 {
+  font-size: 0;
+}
+.item-style-2 {
+  background-color: palevioletred;
+  width: 60%;
+}
+.item-float {
+  float: left;
+}
+.item-mediaquery{
+    float: left;
+}
+footer {
+  background-color: darkgray;
+  padding: 5%;
+  /* clear: both; */
+}
+@media screen and (min-width: 700px) and (min-width: 1200px){
+    body{
+        .item-mediaquery{
+            float: left;
+        }
+    background: black;
+    }
+}
+@media screen and (min-width: 700px) and (min-width: 1200px){
+    body{ 
+    background: red;
+    }
+}

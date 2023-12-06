@@ -2,36 +2,47 @@
 #bc {
   background-color: lightblue;
 }
-/* background-color */
+/* background-clip */
 .div-test {
   background-color: yellow;
   border: 10px dashed black;
   padding: 20px;
   margin: 20px;
 }
-/* border-box : 테두리 까지 적용(기본값) */
+
+/* border-box : 테두리(border)까지 적용 (기본값) */
 #bc1 {
   background-clip: border-box;
 }
-/* padding-box : 테두리를 뺀 패딩 범위까지 적용 */
+/* padding-box : 테두리를 뺀 패딩(padding) 범위까지 적용 */
 #bc2 {
   background-clip: padding-box;
 }
-/* content-box: 내용 부분에만 적용 */
+/* content-box : 내용(content) 부분에만 적용 */
 #bc3 {
   background-clip: content-box;
 }
-/* background */
-/* background-image : 배경에 이미지를 설정하는 속성 
-    background-repeat : 
-    background-size : 배경이미지 크기를 조절하는 속성
-                        contain(요소 안에 이미지가 들어가도록 확대/축소)
-                        cover/
+
+/* background : image repeat attachment position clip origin size */
+/* - background-image : 배경에 이미지를 설정하는 속성
+   - background-repeat : 배경 이미지 반복 여부를 지정하는 속성
+                         repeat (기본값, 가득 찰 때까지 반복), 
+                         repeat-x (가로로 반복), 
+                         repeat-y (세로로 반복),
+                         no-repeat (한 번만 출력)
+   - background-size : 배경 이미지 크기를 조절하는 속성
+                       contain (요소 안에 이미지가 들어가도록 확대/축소)
+                       cover (요소 안에 이미지가 모두 덮을 때까지 확대)
+   - background-position : 배경 이미지가 표시되는 위치를 조정하는 속성 
+                           수평위치(left, center, right) 수직위치(top, center, bottom);
+   - background-attachment : 웹 페이지가 위아래로 움직여도 배경 이미지를 고정시키는 속성
+*/
 #test {
   border: 1px solid black;
   height: 800px;
 
-  background-image: url("../resourses/macarons.jpg");
+  background-image: url("../resourses/pubao.jpg");
+
   background-repeat: repeat;
   background-repeat: repeat-x;
   background-repeat: repeat-y;
@@ -47,4 +58,7 @@
   background-position: left bottom;
   background-position: 50%;
   background-position: center;
+
+  background-attachment: scroll;
+  background-attachment: fixed;
 }
