@@ -1,0 +1,43 @@
+.container {
+  background-color: lightgray;
+  height: 100vh;
+  display: grid;
+
+  grid-template-columns: 200px 500px 300px;
+  grid-template-columns: 1fr 1fr 1fr; /* fraction : 비, 비율 */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 200px 1fr;
+  grid-template-columns: 100px 200px auto;
+  grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+  grid-template-columns: repeat(auto-fit, minmax(20%, auto));
+
+  /* grid-template-rows */
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 200px auto;
+
+  column-gap: 20px;
+  row-gap: 30px;
+  gap: 10px;
+
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.item {
+  background: white;
+}
+
+.item:nth-child(1) {
+  grid-column: 1/4;
+}
+
+.item:nth-child(2) {
+  grid-row: 2/4;
+  grid-column: 1/3;
+}
+.item img {
+  height: 95px;
+}
+
+.item img {
+  height: 95px;
+}
