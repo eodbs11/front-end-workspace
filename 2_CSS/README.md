@@ -150,9 +150,11 @@ rgba(red(0~255), green(0~255), blue(0~255), alpha(0~1));
 ```css
 @media 미디어유형 [and 조건] {
 }
+
 @media screen and (min-width: 200px) and (max-width: 360px) {
   ...;
 }
+
 /* 추천! */
 @media screen and (min-width: 700px) {
 }
@@ -350,21 +352,20 @@ rgba(red(0~255), green(0~255), blue(0~255), alpha(0~1));
 
 - Grid 컨테이너에 display:grid;를 적용하면서 시작
 
-````css
+```css
 .container {
-  display
-}```
+  display: grid;
+}
+```
 
 ## grid-template-rows, grid-template-columns
 
 - 컨테이너에 Grid 트랙(행 또는 열)의 크기들을 지정해주는 속성
 
-## auto-fill, auto-fit
+### auto-fill, auto-fit
 
--column의 개수를 미리 정하지 않고 설정된 너비가 허용하는 한 최대한 세르이 개수를 채움
-
-
-````
+- column의 개수를 미리 정하지 않고 설정된 너비가 허용하는 한 최대한 셀을 채움
+- auto-fill은 셀의 개수가 모자라면 공간이 남지만, auto-fit은 채움
 
 ## row-gap, column-gap, gap
 
@@ -373,19 +374,48 @@ rgba(red(0~255), green(0~255), blue(0~255), alpha(0~1));
 
 ## grid-auto-columns, grid-auto-rows
 
--통제를 벗어난 위치에 있는 트랙의 크기를 지정하는 속성
+- 통제를 벗어난 위치에 있는 트랙의 크기를 지정하는 속성
 
-## grid-column-start, grid-column-end, grid-column,grid-row-start, grid-row-end, grid-row
+## grid-column-start, grid-column-end, grid-column, grid-row-start, grid-row-end, grid-row
 
--각 셀의 영역을 지정하는 속성
+- 각 셀의 영역을 지정하는 속성
 
-.item
-{
-grid-column:1/4;
-grid-column-start: 1;
-grid-column-end: 4;
+```css
+.item {
+  grid-column: 1/4;
+  grid-column-start: 1;
+  grid-column-end: 4;
 
-grid-row: 2/4;
-grid-row-start: 2;
-
+  grid-row: 2/4;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
+```
+
+## justify-items, align-items
+
+- 셀들의 정렬을 지정하는 속성
+
+```css
+/_ justify-items,
+align-items _/ .container {
+  justify-items: start;
+  justify-items: center;
+  justify-items: end;
+
+  align-items: start;
+  align-items: center;
+  align-items: end;
+}
+```
+
+## justify-self, align-self
+
+- 각 하나의 셀을 정렬을 지정하는 속성
+
+```css
+.item:nth-child(6) {
+  justify-self: start or center or end;
+  align-self: start or center or end;
+}
+```
