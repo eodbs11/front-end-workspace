@@ -18,10 +18,29 @@
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+
+  /* transition: 변환속성 애니메이션시간; */
+  transition: transform 5s linear;
 }
 
 .box:hover {
   background-color: rgba(241, 241, 115, 0.8);
 
   /* transform: 변형함수(); */
+  /* scale : 지정한 크기만큼 확대/축소하는 함수 */
+  transform: scale(2);
+  /* rotate : 지정한 각도만큼 회전시키는 함수 */
+  transform: rotate(30deg);
+  /* skew : 지정한 각도만큼 비틀어 왜곡하는 함수 */
+  transform: skew(30deg);
+  transform: skewY(-30deg);
+  /* translate : x축, y축, z축 방향으로 이동시키는 함수 */
+  transform: translateX(100px);
+  transform: translate(100px, 200px);
+  transform: scale(1.5) rotate(15deg);
+
+  /*transform-orgin : 변형의 기준점을 변경하는 속성 */
+
+  transform-origin: left top;
+  transform-origin: right bottom;
 }
