@@ -150,7 +150,7 @@
 
 #z-outer {
   width: 150px;
-  hyphenate-character: ;
+  /* hyphenate-character: ; */
 }
 #z-index1 {
   background-color: orange;

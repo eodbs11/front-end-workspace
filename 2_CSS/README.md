@@ -376,12 +376,16 @@ rgba(red(0~255), green(0~255), blue(0~255), alpha(0~1));
 
 - 통제를 벗어난 위치에 있는 트랙의 크기를 지정하는 속성
 
-## grid-column-start, grid-column-end, grid-column, grid-row-start, grid-row-end, grid-row
-
-- 각 셀의 영역을 지정하는 속성
-
-```css
-.item {
+````css
+.contaoner {
+  grid-auto-rows: minmax(200px, auto);
+}
+``` ## grid-column-start,
+grid-column-end,
+grid-column,
+grid-row-start,
+grid-row-end,
+grid-row - 각 셀의 영역을 지정하는 속성 ```css .item {
   grid-column: 1/4;
   grid-column-start: 1;
   grid-column-end: 4;
@@ -390,7 +394,7 @@ rgba(red(0~255), green(0~255), blue(0~255), alpha(0~1));
   grid-row-start: 2;
   grid-row-end: 4;
 }
-```
+````
 
 ## justify-items, align-items
 
