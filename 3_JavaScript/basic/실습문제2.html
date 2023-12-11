@@ -7,7 +7,7 @@
   </head>
   <body>
     <!-- 입력값은 prompt 사용! -->
-
+    ​
     <!-- 
         Q1. 웹 사이트 관리자는 아이디(id)가 'admin'인 경우라고 가정한다. 다음은 관리자일 경우 '관리자입니다.'를 console에 출력하시오.
      -->
@@ -17,7 +17,7 @@
         console.log("관리자입니다");
       }
     </script>
-
+    ​
     <!-- 
         Q2. 운전 면허 시험은 필기 시험 성적과 실기 시험 성적이 모두 80점 이상이어야 합격이라고 가정한다. 
             합격 조건을 만족하였을 때 '합격', 만족하지 않으면 '불합격'을 console에 출력하시오.
@@ -31,29 +31,49 @@
         console.log("불합격");
       }
     </script>
-
+    ​
     <!-- 
         Q3. 어떤 정수가 10과 20의 사이에 있는 수인지를 판별하여 사이에 있다면 '10과 20의 사이에 있습니다'를 출력, 그렇지 않다면 '10과 20의 사이에 있지 않습니다'를 console에 출력하시오.
      -->
     <script>
       const number = prompt("정수를 입력하세요");
-      if (20 >= number >= 10) {
+      if (number >= 10 && number <= 20) {
         console.log("10과 20의 사이에 있습니다");
       } else {
         console.log("10과 20의 사이에 있지 않습니다");
       }
     </script>
-
+    ​
     <!-- 
         Q4. 나이(age)가 65세 이상이거나 8세 미만이면 '입장료는 무료입니다'를 출력, 그렇지 않다면 '입장료는 10,000원입니다'를 console에 출력하시오.
       -->
-    <script></script>
-
+    <script>
+      const age = prompt("나이를 입력하세요");
+      if (age >= 65 || age < 8) {
+        console.log("입장료는 무료입니다");
+      } else {
+        console.log("입장료는 10,000원입니다");
+      }
+    </script>
+    ​
     <!-- 
         Q5. 월에 따라 계절을 판별하여 console에 출력하시오.
             3 ~ 5월 : 봄, 6 ~ 8월 : 여름, 9 ~ 11월 : 가울, 12 ~ 2월 : 겨울
             예) 12월은 겨울입니다.
      -->
-    <script></script>
+    <script>
+      const month = prompt("월을 입력하세요");
+      if (month >= 3 && month <= 5) {
+        console.log("봄");
+      } else if (month >= 6 && month <= 8) {
+        console.log("여름");
+      } else if (month >= 9 && month <= 11) {
+        console.log("가을");
+      } else if ((month >= 1 && month <= 2) || month == 12) {
+        console.log("겨울");
+      } else {
+        console.log("1월부터 12월까지 중에서 입력하세요");
+      }
+    </script>
   </body>
 </html>
