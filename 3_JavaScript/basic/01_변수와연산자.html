@@ -47,6 +47,94 @@
 
     <!-- 기본 데이터 타입 -->
     <!-- 문자열 -->
-    <script></script>
+    <script>
+      let message = `"안녕" 이라고 말해`;
+      // message = '\"안녕\"이라고 말해';
+      console.log(message);
+      console.log(message[1]); //안
+      console.log(message.length); //11
+
+      console.log("누군가에게", message);
+      console.log("누군가에게" + message);
+      console.log(`누군가에게 ${message}`);
+
+      const name = "신대규";
+      const age = 3;
+      console.log(`안녕? 내 이름은 ${name}이고, 나이는 ${age}살`);
+    </script>
+
+    <!-- 숫자 -->
+    <script>
+      const num1 = 10;
+      const num2 = 3;
+      console.log(num1 + num2); // 13
+      console.log(num1 - num2); // 7
+      console.log(num1 * num2); // 30
+      console.log(num1 / num2); // 3.333333
+      console.log(num1 % num2); // 나머지 : 1
+      console.log(num1 ** num2); // 제곱 10^3 = 1000
+
+      // 문자열 -> 숫자
+      console.log(typeof "100"); // string
+      console.log(typeof Number("100")); //number
+      console.log(typeof "hello"); //NAN
+
+      //실수 -> 정수
+
+      console.log(parseInt(1.8)); //1
+    </script>
+
+    <!--undefined, null-->
+    <script>
+      let test;
+      console.log(test); // undefined - 정의 되지 않음
+
+      test = null;
+      console.log(test); // null - 아무것도 없음
+    </script>
+
+    <!--Boolean과 비교 연산자-->
+    <script>
+      console.log(true);
+      console.log(false);
+      let num3 = 100;
+      let num4 = 200;
+      console.log(num3 < num4); //true
+      console.log(num3 >= num4); //false
+
+      num4 = 100;
+      num4 = "100";
+      console.log(num3 == num4); //true
+      console.log(num3 != num4); //false
+
+      // 데이터 타입까지 체크
+      console.log(num3 === num4); //false
+      console.log(num3 !== num4); //true
+
+      // 다른 자료형 -> Boolean
+      // false : 0, NaN, "", null, undefined
+      // 나머지는 true
+      console.log(Boolean(0)); //false
+      console.log(Boolean(1)); //true
+    </script>
+
+    <!-- 논리 연산자 -->
+    <script>
+      const a = 100;
+      const b = 200;
+
+      // && : 그리고(and)
+      console.log(a < 200 && a == 100); // true && true = true
+      console.log(a > 200 && a == 100); // false && true = false
+
+      // || : 또는(or)
+      console.log(a > 200 || a == 100); // false || true = true
+      console.log(a > 200 || a != 100); //false || false = false
+
+      // ! : 아니다(not)
+      console.log(!true); // false
+      console.log(!false); // true
+      console.log(!!(a > b)); // false
+    </script>
   </body>
 </html>

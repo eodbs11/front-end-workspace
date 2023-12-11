@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>조건문</h1>
+
+    <!-- if(조건) {
+        조건이 true
+    } else {
+        조건이 false;
+      }
+
+      한 줄 표현! 삼항 연산자 : 조건 ? 조건이 :true : 조건이 : false
+    -->
+    <script>
+      let age = 20;
+      // 만약 19살 보다 많으면 성인이라고 출력!
+      // 그게 아니면 미성년자라고 출력!
+      if (age > 19) {
+        console.log("성인");
+      } else {
+        console, log("미성년자");
+      }
+
+      //삼항연산자로
+      age = 17;
+      const result = age > 19 ? "성인" : "미성년자";
+      console.log(result);
+    </script>
+
+    <!-- else if : 여러개 사용 
+    if(조건 A) {
+        조건 A가 true
+    } else if(조건 B) {
+        (조건 A가 false이면서, 조건 B가 true)
+        }
+        else{
+            (둘다 x)
+        }
+    }-->
+    <script>
+      age = 12;
+      if (age > 19) {
+        console.log("성인");
+      } else if (age > 13) {
+        // age > 13 && age <= 18 : 비추천
+        console.log("청소년");
+      } else if (age > 7) {
+        console.log("어린이");
+      } else {
+        console.log("유아");
+      }
+    </script>
+
+    <!-- 
+        switch(데이터) {
+            case 조건 A :
+                조건 A가 true
+                break;
+            case 조건 B :
+                조건 B가 true
+                break;
+            default : 
+                모든 조건이 false
+        } 
+    -->
+    <script>
+      const number = prompt("숫자를 입력하세요");
+      console.log("73번째 줄 >> " + number);
+      // number 값이 짝수이면 짝수, 홀수이면 홀수 출력!
+      // 그 외에는 숫자가 아닙니다 라고 출력!
+      //   if (number % 2 === 0) {
+      //     console.log("짝수");
+      //   } else if (number % 2 === 1) {
+      //     console.log("홀수");
+      //   } else {
+      //     console.log("숫자가 아닙니다.");
+      //   }
+
+      // switch 문
+      switch (number % 2) {
+        case 0:
+          console.log("짝수");
+          break;
+        case 1:
+          console.log("홀수");
+          break;
+        default:
+          console.log("숫자가 아닙니다.");
+      }
+    </script>
+  </body>
+</html>
