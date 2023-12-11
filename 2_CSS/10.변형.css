@@ -44,3 +44,109 @@
   transform-origin: left top;
   transform-origin: right bottom;
 }
+
+/* animation */
+#box-container2 {
+  width: 1200px;
+  height: 600px;
+}
+.animation-box {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  background: indigo;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* animation : name duration iteration:-count timing-function delay direction;
+    -name : 설정된 keyframe 지정
+    -duration : 실행시간 지정
+    - iteration-count : 반복 횟수 지정
+    - timing-functin : 속도 형태 지정
+    - delay : 대기시간 설정
+    - direction : 진행 형태 지정
+  */
+  animation: boxAni 5s linear;
+  animation: boxAni 5s linear 3;
+  animation: boxAni 5s liner infinite;
+  animation: boxAni 5s linear infinite alternate;
+  animation: boxAni 5s liner infinite reverse;
+  animation: boxAni 5s liner infinite alternate-reverse;
+  animation: boxAni 5s liner forwards;
+}
+
+.animation-box:hover {
+  animation-play-state: paused;
+  background-color: yellow;
+}
+
+/* 
+@keyframs 애니메이션 이름 {
+   from { 시작프레임 설정 }
+    to { 끝 프레임 설정 }
+    % { 단위로 지정 가능}
+}
+  */
+
+@keyframes boxAni {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(1000px, 0);
+  }
+  100% {
+    transform: translate(1000px, 400px);
+  }
+}
+/* 3D */
+#box-container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box-container3:hover .card {
+  transform: rotateY(180deg);
+}
+.card {
+  width: 100%;
+  height: 100%;
+  background-image: url("../resourses/blueberries.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(45deg);
+  transform: perspective(400px) rotateY(45deg);
+  transform: rotateY(0deg);
+  transition: 3s;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.card-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card-item-front {
+  background-image: url("../resourses/blueberries.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  /* backface-visibility
+    -요소가 회전하여 뒷면이 보일 경우 표시여부를 지정하는 속성 */
+  backface-visibility: hidden; /* 기본값 :visible */
+}
+.card-item-back {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  transform: rotateY(-180deg);
+}
