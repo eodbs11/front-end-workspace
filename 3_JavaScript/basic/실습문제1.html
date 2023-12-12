@@ -7,6 +7,15 @@
   </head>
   <body>
     <!-- 
+      변수 명명 규칙 
+      1) 변수명에는 문자, 숫자, 기호는 $, _만 사용
+      2) 첫 글자에는 숫자 금지
+      3) 예약어 금지(const, if, switch. ...)금지
+      4) 표기법대로 사용 - camelCase(낙타표기법)
+      5) 상수는(const로 표시한 것 X)는 대문자 + snake_case(언더바 표기법)
+      -->
+
+    <!-- 
         Q1. 킬로그램(kg)을 파운드(lb)로 환산하여 console에 출력하시오.
            - 파운드 = 킬로그램 * 2.2
            예) 킬로그램 : 60  
@@ -35,7 +44,7 @@
       const e = 10;
       const f = 14;
       const g = 4;
-      console.log((e + f) / (2 * g));
+      console.log(((e + f) / 2) * g);
     </script>
     <!-- 
         Q4. 정기예금을 은행에 예치했을 때 수령하는 월 이자를 계산하여 console에 출력하시오. 단, 년 이율은 4%로 가정한다. 
@@ -63,13 +72,20 @@
     <script>
       const m = 15000;
       const n = 5500;
-      console.log(m / n);
+      // console.log(m / n);
+      console.log(parseInt(m / n));
       console.log(m % n);
     </script>
     <!-- 
       Q7. 머쓱이네 양꼬치 가게는 10인분을 먹으면 음료수 하나를 서비스로 준다. 양꼬치는 1인분에 12,000원, 음료수는 2,000원이다. 
           양꼬치 64인분과 음료수 6개를 먹었다면 총얼마를 지불해야 하는지 console에 출력하시오.
      -->
-    <script></script>
+    <script>
+      const lamb = 64;
+      const drink = 6;
+      const service = parseInt(lamb / 10);
+      const total = lamb * 12000 + (drink - service) * 2000;
+      console.log(total);
+    </script>
   </body>
 </html>
