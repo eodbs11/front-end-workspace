@@ -48,20 +48,20 @@
              해당 실행 결과와 같이 나오도록 구현하세요             
     -->
     <script>
-      function music(music1, name) {
-        this.music1 = music1;
+      function music1(name, music2) {
         this.name = name;
+        this.music2 = music2;
         this.desc = function () {
-          console.log(`${this.music1}의 곡 '${this.name}' 발표!`);
+          return `${this.music2}의 곡 '${this.name}' 발표!`;
         };
       }
-      const s = new music("Perfect Night", "르세라핌");
-      console.log(s);
+      const music = new music1("Perfect Night", "르세라핌");
       console.log(music.desc()); // 르세라핌의 곡 'Perfect Night' 발표!
     </script>
 
     <!-- Q5. 프로토타입을 이용하여 발매일(date)를 추가하여 해당 실행 결과와 같이 나오도록 구현하세요 -->
     <script>
+      music1.prototype.date = "2023.10.27";
       console.log(music.date); // 2023.10.27
     </script>
   </body>
