@@ -46,10 +46,12 @@
     <script>
       function sum(a, b) {
         let sum = 0;
-        for (a <= b; sum++) {
-          return +sum;
+        for (let i = a; i <= b; i++) {
+          sum += i;
         }
+        return sum;
       }
+
       console.log(sum(10, 20)); // 165
       console.log(sum(100, 200)); // 15150
     </script>
