@@ -8,49 +8,86 @@
   <body>
     <!-- Q1. 100 ~ 200 정수 중 5의 배수가 아닌 수를 출력하세요 -->
     <script>
-      for (let number = 100; number <= 200; number++) {
-        if (number % 5 == 0) {
-          continue;
+      console.log("Q1 ------------ ");
+      for (let i = 100; i <= 200; i++) {
+        if (i % 5 !== 0) {
+          console.log(i);
         }
-        console.log(number);
       }
     </script>
 
     <!-- Q2. 1 ~ 1000 정수 중 3의 배수의 합계를 출력하세요 -->
     <script>
+      console.log("Q2 ------------ ");
       let sum = 0;
       for (let num = 1; num <= 1000; num++) {
-        if (num % 3 == 0) {
+        if (num % 3 === 0) {
           sum += num;
         }
-        console.log(sum);
       }
+      console.log(sum);
     </script>
 
     <!-- Q3. 문자열의 문자들을 하나씩 출력하세요 -->
     <script>
-      const strArr = "안녕하세요. 반갑습니다!".split("");
-      console.log(strArr);
+      console.log("Q3 ------------ ");
+      const strArr = "안녕하세요. 반갑습니다!";
+      //   for (let A = 0; A < strArr.length; A++) {
+      //     console.log(strArr[A]);
+      //   }
+      //   ------------------------------------------------
+      //   for (const A in strArr) {
+      //     console.log(strArr[A]);
+      //   }
+      //   ------------------------------------------------
+      //   for (const A of strArr) {
+      //     console.log(A);
+      //   }
+      //   ------------------------------------------------
+      let A = 0;
+      while (A < strArr.length) {
+        console.log(strArr[A]);
+        A++;
+      }
     </script>
 
     <!-- Q4. 배열 값 중 최대값을 출력하세요 -->
     <script>
+      console.log("Q4 ------------ ");
       const nums = [3, 7, 12, 5, 3];
+      //   nums.sort((a, b) => a - b);
+      //   console.log(nums[nums.length - 1]);
       let max = nums[0];
-      for (let a = 1; a < nums.length; a++) {
-        if (max < nums[a]) {
-          max = nums[a];
+      for (let num of nums) {
+        if (max < num) {
+          max = num;
         }
-        console.log(max);
+        console.log(`최대값 : ${max}`); // max : 3, num : 3
+        // max : 3, num : 7 -> max < num -> max:7
+        // max : 7, num : 12 -> max : 12
+        // max : 12, num : 5 -> max : 12
+        // max : 12, num : 3 -> max : 12
       }
     </script>
 
     <!-- Q5. 1 ~ 100 정수 중 소수를 출력하세요 -->
     <script>
-      for (let o = 2; o <= 100; o++) {
-        count = 0;
-        for (o1 = 2; o1 < o; o1++) if (o % o1 == 0) count += 1;
-        if (count == 0) console.log(o);
+      console.log("Q5 ------------ ");
+      //   for (let o = 2; o <= 100; o++) {
+      //     count = 0;
+      //     for (o1 = 2; o1 < o; o1++) if (o % o1 == 0) count += 1;
+      //     if (count == 0) console.log(o);
+      //   }
+      for (let i = 2; i <= 10; i++) {
+        for (let j = 2; j <= i; j++) {
+          if (i % j === 0) {
+            if (i !== j) {
+              break;
+            } else if (i === j) {
+              console.log(i);
+            }
+          }
+        }
       }
     </script>
 

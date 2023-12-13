@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 테스트는 자유! -->
+    <!-- Q1. 세 수의 합을 구하는 함수를 만들어 주세요. -->
+    <script>
+      function add(a, b, c) {
+        return a + b + c;
+      }
+      console.log(add(10, 20, 30)); // 60
+      console.log(add(20, 30, 50)); // 100
+    </script>
+
+    <!-- Q2. 삼각형의 너비와 높이에 대해 삼각형의 넓이를 구하는 함수를 만들어 주세요. 
+              삼각형의 넓이 = (삼각형의 너비 * 삼각형의 높이) / 2;
+    -->
+    <script>
+      function triangle(a, b) {
+        return (a * b) / 2;
+      }
+      console.log(triangle(5, 8)); // 20
+      console.log(triangle(3, 8)); // 12
+    </script>
+
+    <!-- Q3. 원의 반지름에 대해 원의 둘레와 넓이를 구하는 함수를 만들어 주세요. 
+             원의 둘레 = 2 * 반지름 * 3.14;
+             원의 넓이 = 반지름 * 반지름 * 3.14;
+    -->
+    <script>
+      function round(a) {
+        return 2 * a * 3.14;
+      }
+      function area(a) {
+        return a * a * 3.14;
+      }
+      console.log(round(2)); // 12.56
+      console.log(area(3)); // 28.26
+    </script>
+
+    <!-- Q4. 시작 수(n1)과 끝 수(n2)가 주어졌을 때 n1 ~ n2의 합계를 구하는 함수를 만들어 주세요 -->
+    <script>
+      function sum(a, b) {
+        let sum = 0;
+        for (a <= b; sum++) {
+          return +sum;
+        }
+      }
+      console.log(sum(10, 20)); // 165
+      console.log(sum(100, 200)); // 15150
+    </script>
+
+    <!-- Q5. 물건 구매가가 주어졌을 때 할인율에 따라 지불 금액을 계산하는 함수를 만들어 주세요. 
+             - 할인율
+               구매가가 10000원 이상 ~ 50000원 미만 : 5%
+               구매가가 50000원 이상 ~ 100000원 미만 : 7.5%
+               구매가가 100000원 이상 : 10%
+    -->
+    <script>
+      function calculate(a) {
+        if (a >= 10000 && a < 50000) {
+          return a * 0.95;
+        }
+        if (50000 <= a && a < 100000) {
+          return a * 0.925;
+        }
+        if (a > 100000) {
+          return a * 0.9;
+        }
+        return a;
+      }
+
+      console.log(calculate(20000)); // 19000
+      console.log(calculate(65000)); // 60125
+    </script>
+  </body>
+</html>
