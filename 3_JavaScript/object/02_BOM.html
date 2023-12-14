@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/02_BOM.js"></script>
+  </head>
+  <body>
+    <h1>BOM(Browser Object Model)</h1>
+    <p>브라우저와 관련된 객체들</p>
+
+    <h2>window 객체</h2>
+    <p>브라우저 창에 대한 설정을 하는 가장 최상위 객체</p>
+
+    <h3>open()</h3>
+    <p>새 창을 여는데 사용</p>
+
+    <button onclick="btn1()">실행 확인</button>
+
+    <!-- 
+        타이머(Timer)
+         : 일정 시간이 경과된 이후 특정 작업을 할 수 있도록 제공
+     -->
+    <h3>setTimeout()</h3>
+    <p>매개값으로 전달된 콜백 함수를 단 한 번만 실행</p>
+    <button onclick="btn2()">실행 확인</button>
+
+    <h3>setInterval()</h3>
+    <p>매개값으로 전달된 콜백 함수를 반복해서 실행</p>
+    <button onclick="btn3()">실행 확인</button>
+
+    <h2>location 객체</h2>
+    <p>브라우저의 URL과 관련된 객체로 주소와 관련된 정보를 가진 객체</p>
+    <button onclick="btn4()">실행 확인</button>
+
+    <h2>history 객체</h2>
+    <p>브라우저에서 이동한 문서의 내역을 관리하는 객체</p>
+    <button onclick="history.back()">back</button>
+    <button onclick="history.go(-1)">back</button>
+    <button onclick="history.forward()">forward</button>
+    <button onclick="history.go(1)">forward</button>
+  </body>
+</html>

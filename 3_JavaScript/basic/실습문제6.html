@@ -34,6 +34,8 @@
     -->
 
     <script>
+      //가급적으로 함수 내에서 직접 출력 금지!
+      // document.write (브라우저에서 출력) / console.log 는 네트스첨
       const book1 = {
         title: "하는 일마다 잘되리라",
         price: 11340,
@@ -42,6 +44,7 @@
         },
       };
       book1.showPrice();
+      document.write(book.showPrice);
     </script>
 
     <!-- Q4. 생성자 함수나 클래스를 이용하여 new Music("Perfect Night", "르세라핌")을 생성 후
@@ -63,6 +66,23 @@
     <script>
       music1.prototype.date = "2023.10.27";
       console.log(music.date); // 2023.10.27
+    </script>
+
+    <!-- 키워드 파라미터 -->
+    <script>
+      // 얘는 그냥 구조 분해 할당을 매개변수에서 바로사용
+      // 객체에서 사용하는 구조 분해 할당(얘는 편리해요!)
+      function read(data) {
+        console.log(data);
+        return `${data.title}을 읽는다`;
+      }
+      console.log(read(book));
+
+      //여기부터 키워드 파라미터(별로 안 씀)
+
+      function write({ author = "테스트", title = "Test" }) {
+        return `${author}가 ${title}을 쓰다.`;
+      }
     </script>
   </body>
 </html>
