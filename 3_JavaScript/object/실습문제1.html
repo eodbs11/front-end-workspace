@@ -56,7 +56,13 @@
 input.value -->
 
     <script>
-      function printValue() {}
+      function printValue() {
+        const result1 = document.querySelector("#result1");
+        const customer = document.querySelector("#customer").value;
+        const product = document.querySelector("#product").value;
+        const price = document.querySelector("#price").value;
+        result1.innerHTML = `${customer}님의 구매 상품은 ${product}이고 가격은 ${price}원입니다.`;
+      }
     </script>
 
     <hr />
@@ -82,7 +88,11 @@ input.value -->
     <button onclick="stringLength();">확인하기</button>
 
     <script>
-      function stringLength() {}
+      function stringLength() {
+        const result2 = document.querySelector("#result2");
+        const text1 = document.querySelector("#text1").value.length;
+        result2.innerHTML = `입력하신 문자열의 길이는 ${text1}입니다.`;
+      }
     </script>
 
     <hr />
@@ -106,7 +116,13 @@ input.value -->
     <button onclick="stringSplit();">확인하기</button>
 
     <script>
-      function stringSplit() {}
+      function stringSplit() {
+        const result3 = document.querySelector("#result3");
+        const la1 = document.querySelector("#la1").value;
+
+        result3.innerHTML = `${la1}`;
+        // .split(",")
+      }
     </script>
 
     <hr />
