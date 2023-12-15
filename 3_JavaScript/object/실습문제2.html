@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>올해 남은 시간</h1>
+    <h2 id="clock"></h2>
+
+    <input type="date" />
+    <button onclick="dday()">D-Day</button>
+    <div id="result"></div>
+
+    <script>
+      function dday() {
+        const result2 = new Date(date.value);
+        const now = new Date();
+        const day = Math.ceil((result2 - now) / (1000 * 60 * 60 * 24));
+        result.innerHTML = `D-${day}`;
+      }
+    </script>
+    <script>
+      // Date, Math 객체
+      // 날짜 - 날짜 = 밀리세컨드 (1초 = 밀리세컨드/1000)
+      // 60초 = 1분, 60분 = 1시간, 24시간 = 1일
+      // setInterval
+
+      const last = new Date("2024-01-01 00:00:00");
+
+      function count() {
+        const now = new Date();
+        const result = last - now;
+
+        const day = String(Math.floor(result / (1000 * 60 * 60 * 24))).padStart(
+          2,
+          "0"
+        );
+        const hour = String(
+          Math.floor((result / (1000 * 60 * 60)) % 24)
+        ).padStart(2, "0");
+        const minute = String(Math.floor((result / (1000 * 60)) % 60)).padStart(
+          2,
+          "0"
+        );
+        //빈자리에 0채워넣기 위해 문자열로 변환 .padStart(2,"0")
+        const second = String(Math.floor((result / 1000) % 60)).padStart(
+          2,
+          "0"
+        );
+
+        // const day = last.getDate() - now.getdate();
+        // const hour = last.getHour() - now.gethour();
+        // const minute = last.getMinute() - now.getminute();
+        // const second = last.getSecond() - now.getsecond();
+
+        clock.innerHTML = `${day}d ${hour}h ${minute}m ${second}s`;
+      }
+
+      count();
+
+      setInterval(count, 1000);
+    </script>
+  </body>
+</html>

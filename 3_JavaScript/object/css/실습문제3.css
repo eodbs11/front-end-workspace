@@ -1,0 +1,51 @@
+#head1 {
+  font-weight: bold;
+  font-size: 3rem;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#head2 {
+  font-size: 2rem;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spy {
+  border-radius: 50%;
+  padding: 50px;
+}
+
+.container1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#btn1 {
+  background-color: hotpink;
+  border-radius: 15px;
+  width: 120px;
+}
+
+#btn2 {
+  background-color: darkblue;
+  color: hotpink;
+  border-radius: 15px;
+  width: 120px;
+}
