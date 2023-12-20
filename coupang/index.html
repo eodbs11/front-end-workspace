@@ -39,121 +39,192 @@
       <div class="category-btn">
         <i class="fa-solid fa-bars"></i>
         <p>카테고리</p>
-      </div>
-      <!-- 숨겨져 있는 카테고리 -->
-      <div class="category">
-        <div class="category-list">
-          <div class="category-item">
-            <i class="fa-solid fa-shirt"></i>
-            <span>패션의류/잡화</span>
-            <i class="fa-solid fa-caret-right"></i>
-          </div>
-          <div class="category-item">
-            <i class="fa-solid fa-pump-soap"></i>
-            <span>뷰티</span>
-            <i class="fa-solid fa-caret-right"></i>
-          </div>
-          <div class="category-item">
-            <i class="fa-solid fa-baby"></i>
-            <span>출산/유아동</span>
-            <i class="fa-solid fa-caret-right"></i>
-          </div>
-          <div class="category-item">
-            <i class="fa-solid fa-bowl-food"></i>
-            <span>식품</span>
-            <i class="fa-solid fa-caret-right"></i>
-          </div>
-          <div class="category-item">
-            <i class="fa-solid fa-mug-saucer"></i>
-            <span>주방용품</span>
-            <i class="fa-solid fa-caret-right"></i>
-          </div>
-          <div class="category-item">
-            <i class="fa-solid fa-bottle-droplet"></i>
-            <span>생활용품</span>
-            <i class="fa-solid fa-caret-right"></i>
-          </div>
-          <div class="category-item">
-            <i class="fa-solid fa-couch"></i>
-            <span>홈인테리어</span>
-            <i class="fa-solid fa-caret-right"></i>
-          </div>
-          <div class="category-item">
-            <i class="fa-solid fa-camera"></i>
-            <span>가전디지털</span>
-            <i class="fa-solid fa-caret-right"></i>
-          </div>
-          <div class="category-item">
-            <i class="fa-solid fa-baseball"></i>
-            <span>스포츠/레저</span>
-            <i class="fa-solid fa-caret-right"></i>
-          </div>
-          <div class="category-item">
-            <i class="fa-solid fa-car"></i>
-            <span>자동차용품</span>
-            <i class="fa-solid fa-caret-right"></i>
-          </div>
-        </div>
-        <div class="category-sub">
-          <div class="category-sub-item">
-            <img
-              src="https://image8.coupangcdn.com/image/displayitem/displayitem_3cc22bda-73a2-4f9b-a7ea-c12d205adcb3.jpg"
-              alt=""
-            />
-          </div>
-          <div class="category-sub-item">
-            <img
-              src="https://image9.coupangcdn.com/image/displayitem/displayitem_66b57433-c633-44e2-ad4a-e334e2779ab3.jpg"
-              alt=""
-            />
-          </div>
-          <div class="category-sub-item">
-            <img
-              src="https://image7.coupangcdn.com/image/displayitem/displayitem_177b1f26-409b-4799-a6f6-1468c45fcdcc.jpg"
-              alt=""
-            />
-          </div>
-          <div class="category-sub-item">
-            <img
-              src="https://image7.coupangcdn.com/image/displayitem/displayitem_96ace47f-0079-4436-9cf0-25a43ac75517.jpg"
-              alt=""
-            />
-          </div>
-          <div class="category-sub-item">
-            <img
-              src="https://image6.coupangcdn.com/image/displayitem/displayitem_2049fac1-63d9-441c-ba0a-26a95ca5ee71.jpg"
-              alt=""
-            />
-          </div>
-          <div class="category-sub-item">
-            <img
-              src="https://image6.coupangcdn.com/image/displayitem/displayitem_5c29f78b-865f-4303-bc84-b811633fab36.jpg"
-              alt=""
-            />
-          </div>
-          <div class="category-sub-item">
-            <img
-              src="https://image9.coupangcdn.com/image/displayitem/displayitem_2af06d7f-e016-419e-8fcb-059898000ee2.jpg"
-              alt=""
-            />
-          </div>
-          <div class="category-sub-item">
-            <img
-              src="https://image7.coupangcdn.com/image/displayitem/displayitem_1682114d-db45-4371-8aee-b1d6f69523dc.jpg"
-              alt=""
-            />
-          </div>
-          <div class="category-sub-item">
-            <img
-              src="https://image7.coupangcdn.com/image/displayitem/displayitem_632d731b-b306-4e0a-b3fb-1ee5bf06f380.jpg"
-              alt=""
-            />
-          </div>
-          <div class="category-sub-item">
-            <img
-              src="https://image7.coupangcdn.com/image/displayitem/displayitem_33eefe3e-deb8-45f3-b1f9-e9a01815c3f7.jpg"
-              alt=""
-            />
+        <!-- 숨겨져 있는 카테고리 -->
+        <!-- event 사용 -> hover 방식으로 변경
+            hover 같은 경우는 하위 태그로 존재해야 함!
+        -->
+        <div class="category">
+          <div class="category-list">
+            <div class="category-item">
+              <i class="fa-solid fa-shirt"></i>
+              <span>패션의류/잡화</span>
+              <i class="fa-solid fa-caret-right"></i>
+              <div class="category-sub-item">
+                <ul>
+                  <!--(li>a)*4-->
+                  <li><a href="#">여성패션</a></li>
+                  <li><a href="#">남성패션</a></li>
+                  <li><a href="#">남녀 공용 의류</a></li>
+                  <li><a href="#">유아동패션</a></li>
+                </ul>
+                <img
+                  src="https://image8.coupangcdn.com/image/displayitem/displayitem_3cc22bda-73a2-4f9b-a7ea-c12d205adcb3.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category-item">
+              <i class="fa-solid fa-pump-soap"></i>
+              <span>뷰티</span>
+              <i class="fa-solid fa-caret-right"></i>
+              <div class="category-sub-item">
+                <ul>
+                  <li><a href="#">로켓럭셔리</a></li>
+                  <li><a href="#">스킨케어</a></li>
+                  <li><a href="#">클린/비건뷰티</a></li>
+                  <li><a href="#">클렌징/필링</a></li>
+                  <li><a href="#">더마코스메틱</a></li>
+                </ul>
+                <img
+                  src="https://image9.coupangcdn.com/image/displayitem/displayitem_66b57433-c633-44e2-ad4a-e334e2779ab3.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category-item">
+              <i class="fa-solid fa-baby"></i>
+              <span>출산/유아동</span>
+              <i class="fa-solid fa-caret-right"></i>
+              <div class="category-sub-item">
+                <ul>
+                  <li><a href="#">유아동패션</a></li>
+                  <li><a href="#">기저귀</a></li>
+                  <li><a href="#">물티슈</a></li>
+                  <li><a href="#">분유/어린이식품</a></li>
+                  <li><a href="#">어린이 건강식품</a></li>
+                </ul>
+                <img
+                  src="https://image7.coupangcdn.com/image/displayitem/displayitem_177b1f26-409b-4799-a6f6-1468c45fcdcc.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category-item">
+              <i class="fa-solid fa-bowl-food"></i>
+              <span>식품</span>
+              <i class="fa-solid fa-caret-right"></i>
+              <div class="category-sub-item">
+                <ul>
+                  <li><a href="#">유기농/친환경 전문관</a></li>
+                  <li><a href="#">과일</a></li>
+                  <li><a href="#">견과/건과</a></li>
+                  <li><a href="#">채소</a></li>
+                  <li><a href="#">쌀/잡곡</a></li>
+                </ul>
+                <img
+                  src="https://image7.coupangcdn.com/image/displayitem/displayitem_96ace47f-0079-4436-9cf0-25a43ac75517.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category-item">
+              <i class="fa-solid fa-mug-saucer"></i>
+              <span>주방용품</span>
+              <i class="fa-solid fa-caret-right"></i>
+              <div class="category-sub-item">
+                <ul>
+                  <li><a href="#">주방가전</a></li>
+                  <li><a href="#">냄비/프라이팬</a></li>
+                  <li><a href="#">주방조리도구</a></li>
+                  <li><a href="#">그릇/홈세트</a></li>
+                  <li><a href="#">수저/커트러리</a></li>
+                </ul>
+                <img
+                  src="https://image6.coupangcdn.com/image/displayitem/displayitem_2049fac1-63d9-441c-ba0a-26a95ca5ee71.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category-item">
+              <i class="fa-solid fa-bottle-droplet"></i>
+              <span>생활용품</span>
+              <i class="fa-solid fa-caret-right"></i>
+              <div class="category-sub-item">
+                <ul>
+                  <li><a href="#">방한용품</a></li>
+                  <li><a href="#">헤어</a></li>
+                  <li><a href="#">바디/세안</a></li>
+                  <li><a href="#">구강/면도</a></li>
+                  <li><a href="#">화장지/물티슈</a></li>
+                </ul>
+                <img
+                  src="https://image6.coupangcdn.com/image/displayitem/displayitem_5c29f78b-865f-4303-bc84-b811633fab36.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category-item">
+              <i class="fa-solid fa-couch"></i>
+              <span>홈인테리어</span>
+              <i class="fa-solid fa-caret-right"></i>
+              <div class="category-sub-item">
+                <ul>
+                  <li><a href="#">크리스마스용품</a></li>
+                  <li><a href="#">방한용품</a></li>
+                  <li><a href="#">F/W 침구샵</a></li>
+                  <li><a href="#">싱글하우스</a></li>
+                  <li><a href="#">홈데코</a></li>
+                </ul>
+                <img
+                  src="https://image9.coupangcdn.com/image/displayitem/displayitem_2af06d7f-e016-419e-8fcb-059898000ee2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category-item">
+              <i class="fa-solid fa-camera"></i>
+              <span>가전디지털</span>
+              <i class="fa-solid fa-caret-right"></i>
+              <div class="category-sub-item">
+                <ul>
+                  <li><a href="#">TV/영상가전</a></li>
+                  <li><a href="#">냉장고</a></li>
+                  <li><a href="#">세탁기/건조기</a></li>
+                  <li><a href="#">생활가전</a></li>
+                  <li><a href="#">청소기</a></li>
+                </ul>
+                <img
+                  src="https://image7.coupangcdn.com/image/displayitem/displayitem_1682114d-db45-4371-8aee-b1d6f69523dc.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category-item">
+              <i class="fa-solid fa-baseball"></i>
+              <span>스포츠/레저</span>
+              <i class="fa-solid fa-caret-right"></i>
+              <div class="category-sub-item">
+                <ul>
+                  <li><a href="#">캠핑전문관</a></li>
+                  <li><a href="#">홈트레이닝</a></li>
+                  <li><a href="#">수영/수상스포츠</a></li>
+                  <li><a href="#">골프</a></li>
+                  <li><a href="#">자전거</a></li>
+                </ul>
+                <img
+                  src="https://image7.coupangcdn.com/image/displayitem/displayitem_632d731b-b306-4e0a-b3fb-1ee5bf06f380.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="category-item">
+              <i class="fa-solid fa-car"></i>
+              <span>자동차용품</span>
+              <i class="fa-solid fa-caret-right"></i>
+              <div class="category-sub-item">
+                <ul>
+                  <li><a href="#">겨울철 차량관리</a></li>
+                  <li><a href="#">인테리어</a></li>
+                  <li><a href="#">익스테리어</a></li>
+                  <li><a href="#">세차/카케어</a></li>
+                  <li><a href="#">차량용 전자기기</a></li>
+                </ul>
+                <img
+                  src="https://image7.coupangcdn.com/image/displayitem/displayitem_33eefe3e-deb8-45f3-b1f9-e9a01815c3f7.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -270,6 +341,91 @@
         </nav>
       </div>
     </header>
+
+    <!-- main -->
+    <main>
+      <img
+        src="https://static.coupangcdn.com/ha/cmg_paperboy/image/1702979045489/C1-PC1.jpg"
+        alt=""
+        class="main-img-active"
+      />
+      <img
+        src="https://image10.coupangcdn.com/image/ccm/banner/22ab75b623ae1fbe7db2446870d6e256.jpg"
+        alt=""
+      />
+      <img
+        src="https://static.coupangcdn.com/va/cmg_paperboy/image/1702617095967/Untitled-3.jpg"
+        alt=""
+      />
+    </main>
+
+    <!-- section : 오늘의 발견 - grid 활용! -->
+    <section class="discovery-list container">
+      <h2>오늘의 발견 <span> | 오늘 쿠팡이 엄선한 가장 HOT한 제품!</span></h2>
+      <div class="discovery-list-items">
+        <!-- (a>img)*6 -->
+        <a href=""
+          ><img
+            src="https://static.coupangcdn.com/pa/cmg_paperboy/image/1702336886369/C2-1-%E1%84%91%E1%85%B5%E1%86%AF%E1%84%85%E1%85%B5%E1%86%B8%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A9%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A1.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://static.coupangcdn.com/ja/cmg_paperboy/image/1702336879265/C2-2-%E1%84%8B%E1%85%A2%E1%84%80%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%A5%E1%86%B8.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://static.coupangcdn.com/da/cmg_paperboy/image/1702336908873/C2-3-%E1%84%8B%E1%85%B2%E1%84%92%E1%85%A1%E1%86%AB%E1%84%92%E1%85%AC%E1%84%89%E1%85%A1-%E1%84%8B%E1%85%B184.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://static.coupangcdn.com/pa/cmg_paperboy/image/1702336924563/C2-4-%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A6%E1%86%A8%E1%84%91%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8C%E1%85%A1.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://static.coupangcdn.com/xa/cmg_paperboy/image/1702336940639/C2-5-%E1%84%82%E1%85%A6%E1%84%8E%E1%85%B2%E1%84%85%E1%85%A5%E1%86%AF%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%91%E1%85%B3.jpg"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            src="https://static.coupangcdn.com/ea/cmg_paperboy/image/1702888199614/C2-6-%E1%84%8B%E1%85%B5%E1%84%8E%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE.jpg"
+            alt=""
+        /></a>
+      </div>
+    </section>
+
+    <!-- section : 오늘의 판매자 특가 
+              (나중에 개발 진행할 예정) -->
+
+    <!-- section : 카테고리별 추천 광고 상품 -->
+    <section class="category-best container">
+      <h2>
+        <span>HOT! TREND</span>
+        카테고리별
+        <span>추천 광고상품</span>
+      </h2>
+      <div class="category-menu">
+        <a href=""><i class="fa-solid fa-shirt"></i></a>
+        <a href=""><i class="fa-solid fa-pump-soap"></i></a>
+        <a href=""><i class="fa-solid fa-baby"></i></a>
+        <a href=""><i class="fa-solid fa-bowl-food"></i></a>
+        <a href=""><i class="fa-solid fa-mug-saucer"></i></a>
+        <a href=""><i class="fa-solid fa-bottle-droplet"></i></a>
+        <a href=""><i class="fa-solid fa-couch"></i></a>
+        <a href=""><i class="fa-solid fa-camera"></i></a>
+        <a href=""><i class="fa-solid fa-baseball"></i></a>
+        <a href=""><i class="fa-solid fa-car"></i></a>
+      </div>
+      <div class="category-best-items"></div>
+      <div class="category-best-items"></div>
+      <div class="category-best-items"></div>
+      <div class="category-best-items"></div>
+      <div class="category-best-items"></div>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
