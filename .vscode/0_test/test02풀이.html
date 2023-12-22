@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./test02풀이.css" />
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <form action="" onsubmit="return validate()">
+      <div class="form-content">
+        <label for="id">아이디</label>
+        <div>
+          <input type="text" id="id" />
+          <span id="id-span"></span>
+        </div>
+      </div>
+      <div class="form-content">
+        <label for="password">패스워드</label>
+        <div>
+          <input type="password" id="password" />
+          <span id="password-span"></span>
+        </div>
+      </div>
+      <div class="form-content">
+        <label for="password-check">패스워드 확인</label>
+        <div>
+          <input type="password" id="password-check" />
+          <span id="password-check-span"></span>
+        </div>
+      </div>
+      <div class="form-content">
+        <label for="email">이메일</label>
+        <div>
+          <input type="text" id="email" />
+          <span id="email-span"></span>
+        </div>
+      </div>
+      <div class="form-content">
+        <label for="addr">주소</label>
+        <div>
+          <input type="text" id="addr" />
+          <span id="addr-span"></span>
+        </div>
+      </div>
+      <button type="submit">회원가입</button>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
